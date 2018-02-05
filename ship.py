@@ -37,3 +37,7 @@ class Ship():
     def blitme(self):
         """show the player in the actual position"""
         self.screen.blit(self.image, self.rect)
+
+    def center_ship(self):
+        """center the police"""
+        self.center = self.screen_rect.centerx

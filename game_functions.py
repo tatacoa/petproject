@@ -4,7 +4,7 @@ import sys
 import pygame
 from bullet import Bullet
 from rabbit import Rabbit
-
+from time import sleep
 
 def check_keydown_events(event, ai_settings, screen, ship, bullets):
     """respond to key actions"""
@@ -56,11 +56,12 @@ def update_screen(ai_settings, screen, ship, rabbits, bullets):
     pygame.display.flip()
 
 
-def update_bullets(bullets):
+def update_bullets(rabbits, bullets):
     """update the position of the bullets and clean old bullets"""
     # update bullet position
     bullets.update()
-
+    collisions = pygame.sprite.groupcollide(bullets, rabbits, 
+                                            True, True)
     # clean old bullets
     for bullet in bullets.copy():
         if bullet.rect.bottom <= 0:
@@ -128,6 +129,41 @@ def change_family_direction(ai_settings, rabbits):
     ai_settings.family_direction *= -1
 
 
-def update_rabbits(ai_settings, rabbits):
+def ship_hit(ai_settings, stats, screen, ship, rabbits,
+             bullets):
+    if stats.ships_left > 0:
+        stats.ships_left -= 1
+
+        rabbits.empty()
+        bullets.empty()
+
+        create_fleet(ai_settings, screen, ship, rabbits)
+        ship.center_ship()
+
+        sleep(0.5)
+
+    else:
+        stats.game_active = False
+
+
+def update_rabbits(ai_settings, stats, screen, ship, rabbits,
+                   bullets):
     check_family_edges(ai_settings, rabbits)
     rabbits.update()
+    # verify collitions
+    if pygame.sprite.spritecollideany(ship, rabbits):
+        print("Police Down")
+        ship_hit(ai_settings, stats, screen, ship, rabbits,
+                 bullets)
+        check_rabbits_bottom(ai_settings, stats, screen, ship,
+                             rabbits, bullets)
+
+
+def check_rabbits_bottom(ai_settings, stats, screen, ship,
+                         rabbits, bullets):
+    screen_rect = screen.get_rect()
+    for rabbit in rabbits.sprites():
+        if rabbit.rect.bottom >= screen_rect.bottom:
+            ship_hit(ai_settings, stats, screen, ship, rabbits,
+                     bullets)
+            break
