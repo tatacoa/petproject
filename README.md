@@ -1,4 +1,4 @@
-# Pet Project Dashboard Advanced Softwareengineering WS17-18
+# Pet Project Advanced Softwareengineering WS17-18
 space invaders like game with angry rabbits and a police man
 
 ![rabbit](images/rabbit.png)
@@ -50,7 +50,7 @@ In this diagram each box represent one stage of the game  and describe it. Once 
 
 # Metrics
 
-  # SonarQube Scanner
+# SonarQube Scanner
 
 SonarQube performs an anaysis of the pet project; the quality measures and issues instances where coding rules were broken. to see the results please link on the Badget:
 
@@ -68,5 +68,13 @@ Overal Maintainability rating was A! (Remediation cost / Development cost : less
 
 [I'm an inline-style link](https://github.com/tatacoa/petproject/blob/ee7915f0faf42276e62e945d54f5a2e4ab89005a/bullet.py#L5)
 
+# DSL
 
+# Functional Programing
+
+# AOP
+
+# Logical Solver
+
+# Scala
 
