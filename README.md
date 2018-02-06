@@ -23,7 +23,7 @@ The game is inspired by the book "Curso Intensivo de PYTHON" by author Eric Matt
 
 # The Game
 
-The player control a gun that appear in the low part of the screen, the player can move the gun to the rigth and to the left using the < > keys and to shot using the barscpace. When the game beginns, a familiy of rabbits come to tierpark from the top of the screen, the player shot the rabits, when the player kill all the rabits, a new generation will come to the park that is faster, if a rabbit comes to the end of the park the player will loose and the game is over.
+The player control the gun to appear in the low part of the screen, the player can move the gun to the rigth and to the left using the <> keys and to shot using the barscpace. When the game begins, a familiy of rabbits come to tierpark from the top of the screen, the player shot the rabits, when the player kills all the rabbits, a new generation will come to the park that is faster, if a rabbit comes to the end of the park the player will lose and the game is over.
 
 
 ![image](images/Screenshot1.png)
@@ -45,8 +45,7 @@ an object representing the entire game including rabbits and the police.
 ![image](images/uml_3.png)
 
 State Diagram:
-
-In this diagram each box represent one stage of the game  and describe it. Once the game start the player can have 3 states: 1: the police is killing rabbits, 2: The Rabbits kill the police and 3: The police has no more bullets and need to wait for a small period of time till some bullets are free again. The player win, wenn all the rabbits are killed and  loose when the rabbits kill him. 
+In this diagram each box represent one stage of the game  and describe it. Once the game start the player can have 3 states: 1: the police is killing rabbits, 2: The Rabbits kill the police and 3: The police has no more bullets and need to wait for a small period of time till some bullets are free again. The player win, wenn all the rabbits are killed and  lose when the rabbits kill him. 
 
 ![image](images/uml_4.png)
 
@@ -68,7 +67,6 @@ Overal Maintainability rating was A! (Remediation cost / Development cost : less
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/1a4ffcfcfc01fc55c1e8/maintainability)](https://codeclimate.com/github/tatacoa/petproject/maintainability)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/1a4ffcfcfc01fc55c1e8/test_coverage)](https://codeclimate.com/github/tatacoa/petproject/test_coverage)
 
 # CI Travis
 
