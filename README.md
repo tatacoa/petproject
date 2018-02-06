@@ -74,7 +74,13 @@ Overal Maintainability rating was A! (Remediation cost / Development cost : less
 
 # Clean Code
 
-[I'm an inline-style link](https://github.com/tatacoa/petproject/blob/ee7915f0faf42276e62e945d54f5a2e4ab89005a/bullet.py#L5)
+The clean code is based on the "Clean code cheat sheet" from this [link](https://www.planetgeek.ch/wp-content/uploads/2013/06/Clean-Code-V2.2.pdf). I show here some examples:
+
+[Example 1](): Package Coupling
+[Example 1](): High Cohesion
+[Example 1](): Class Design
+[Example 1](): Naming
+[Example 1](): Methods
 
 # DSL
 
