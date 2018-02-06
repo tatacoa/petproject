@@ -23,6 +23,9 @@ The game is inspired by the book "Curso Intensivo de PYTHON" by author Eric Matt
 
 # The Game
 
+The player control a gun that appear in the low part of the screen, the player can move the gun to the rigth and to the left using the < > keys and to shot using the barscpace. When the game beginns, a familiy of rabbits come to tierpark from the top of the screen, the player shot the rabits, when the player kill all the rabits, a new generation will come to the park that is faster, if a rabbit comes to the end of the park the player will loose and the game is over.
+
+
 ![image](images/Screenshot1.png)
 ![image](images/Screenshot2.png)
 ![image](images/Screenshot3.png)
@@ -45,9 +48,9 @@ In this diagram each box represent one stage of the game  and describe it. Once 
 
 ![image](images/ULM4.png)
 
+# Metrics
 
-
-# SonarQube Scanner
+  # SonarQube Scanner
 
 SonarQube performs an anaysis of the pet project; the quality measures and issues instances where coding rules were broken. to see the results please link on the Badget:
 
@@ -59,5 +62,11 @@ The pet project complexity was calculated based on the number of paths through t
 
 Overal Maintainability rating was A! (Remediation cost / Development cost : less than 0.05), no bugs rating A!. In General my code pass the SonarQube scanner no bugs and no vulnerabilities found!. 
 
+# CI Travis
+
+# Clean Code
+
 [I'm an inline-style link](https://github.com/tatacoa/petproject/blob/ee7915f0faf42276e62e945d54f5a2e4ab89005a/bullet.py#L5)
+
+
 
