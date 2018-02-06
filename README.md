@@ -67,6 +67,8 @@ Overal Maintainability rating was A! (Remediation cost / Development cost : less
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/1a4ffcfcfc01fc55c1e8/maintainability)](https://codeclimate.com/github/tatacoa/petproject/maintainability)
 
+This code review tool analyze all relevant files in the current working directory in my repository. 20 files where evaluated, 7 Total issues, and a general technical debt rate B (5% to 10% ratio)
+
 
 # CI Travis
 
