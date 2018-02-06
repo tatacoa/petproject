@@ -13,6 +13,14 @@ space invaders like game with angry rabbits and a police man
 ![rabbit](images/rabbit.png)
 ![rabbit](images/rabbit.png)
 
+# Rabbits in TierPark 
+
+Rabbits in TierPark is a game based on the famous game of the late 80s space invaders, a classic game one of the first video games created and very popular.
+
+The motivation to create a version of this game as a pet project, is to understand the basic concepts of programming in python, since I have no experience programming in python, and also apply the concepts seen in the course.
+
+The game is inspired by the book "Curso Intensivo de PYTHON" by author Eric Matthes, which I recommend a lot to learn to program in Python!
+
 # The Game
 
 ![image](images/Screenshot1.png)
@@ -37,3 +45,16 @@ In this diagram each box represent one stage of the game  and describe it. Once 
 
 ![image](images/ULM4.png)
 
+
+
+# SonarQube Scanner
+
+SonarQube performs an anaysis of the pet project; the quality measures and issues instances where coding rules were broken. to see the results please link on the Badget:
+
+
+[![sonar cube]( https://sonarcloud.io/api/project_badges/measure?project=Sonar_PetProject&metric=alert_status)](https://sonarcloud.io/dashboard?id=Sonar_PetProject)
+
+
+The pet project complexity was calculated based on the number of paths through the code. This calculation gave a value of 54, is a low number indicating the code is easy to read. No duplicated blocks, files or lines. Two issues where found for an unused local variable and the other one having two branches in the same if statment. 
+
+Overal Maintainability rating was A! (Remediation cost / Development cost : less than 0.05), no bugs rating A!. In General my code pass the SonarQube scanner no bugs and no vulnerabilities found!. 
