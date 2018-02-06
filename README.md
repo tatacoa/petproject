@@ -62,6 +62,12 @@ The pet project complexity was calculated based on the number of paths through t
 
 Overal Maintainability rating was A! (Remediation cost / Development cost : less than 0.05), no bugs rating A!. In General my code pass the SonarQube scanner no bugs and no vulnerabilities found!. 
 
+# Code Climate
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/1a4ffcfcfc01fc55c1e8/maintainability)](https://codeclimate.com/github/tatacoa/petproject/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/1a4ffcfcfc01fc55c1e8/test_coverage)](https://codeclimate.com/github/tatacoa/petproject/test_coverage)
+
 # CI Travis
 
 # Clean Code
