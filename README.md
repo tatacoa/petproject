@@ -74,13 +74,19 @@ Overal Maintainability rating was A! (Remediation cost / Development cost : less
 
 # Clean Code
 
-The clean code is based on the "Clean code cheat sheet" from this [link](https://www.planetgeek.ch/wp-content/uploads/2013/06/Clean-Code-V2.2.pdf). I show here some examples:
+The clean code is based on the "Clean code cheat sheet" from this [link](https://www.planetgeek.ch/wp-content/uploads/2013/06/Clean-Code-V2.2.pdf). I use vim with the XXXXXXXXXXXXXXXXXXXXXXXXXX config some examples:
 
-[Example 1](): Package Coupling
-[Example 1](): High Cohesion
-[Example 1](): Class Design
-[Example 1](): Naming
-[Example 1](): Methods
+[Example 1](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/game_stats.py#L1): General and Understandability
+
+[Example 2](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/rabbits_game.py#L13): High Cohesion
+
+[Example 3](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/bullet.py#L5): Class Design
+
+[Example 4](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/settings.py#L1): Naming
+
+[Example 5](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/game_functions.py#L9): Methods
+
+
 
 # DSL
 
