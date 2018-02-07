@@ -23,7 +23,7 @@ The game is inspired by the book "Curso Intensivo de PYTHON" by author Eric Matt
 
 # The Game
 
-The player control a gun that appear in the low part of the screen, the player can move the gun to the rigth and to the left using the < > keys and to shot using the barscpace. When the game beginns, a familiy of rabbits come to tierpark from the top of the screen, the player shot the rabits, when the player kill all the rabits, a new generation will come to the park that is faster, if a rabbit comes to the end of the park the player will loose and the game is over.
+The player control the gun to appear in the low part of the screen, the player can move the gun to the rigth and to the left using the <> keys and to shot using the barscpace. When the game begins, a familiy of rabbits come to tierpark from the top of the screen, the player shot the rabits, when the player kills all the rabbits, a new generation will come to the park that is faster, if a rabbit comes to the end of the park the player will lose and the game is over.
 
 
 ![image](images/Screenshot1.png)
@@ -36,15 +36,16 @@ The player control a gun that appear in the low part of the screen, the player c
 ![image](images/uml_1.png)
 
 ![image](images/uml_2.png)
+
 In this diagram you can see some action nodes. Yo have a start node and an end node. 
 On the right there is a branching. Object nodes are not drawn. In this way, you could insert objects in various places, which are
 then available at that point. For example, a rabbit object that is killed by the police after a successful bullet shoot. Or
 an object representing the entire game including rabbits and the police.
 
 ![image](images/uml_3.png)
-State Diagram:
 
-In this diagram each box represent one stage of the game  and describe it. Once the game start the player can have 3 states: 1: the police is killing rabbits, 2: The Rabbits kill the police and 3: The police has no more bullets and need to wait for a small period of time till some bullets are free again. The player win, wenn all the rabbits are killed and  loose when the rabbits kill him. 
+State Diagram:
+In this diagram each box represent one stage of the game  and describe it. Once the game start the player can have 3 states: 1: the police is killing rabbits, 2: The Rabbits kill the police and 3: The police has no more bullets and need to wait for a small period of time till some bullets are free again. The player win, wenn all the rabbits are killed and  lose when the rabbits kill him. 
 
 ![image](images/uml_4.png)
 
@@ -66,13 +67,26 @@ Overal Maintainability rating was A! (Remediation cost / Development cost : less
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/1a4ffcfcfc01fc55c1e8/maintainability)](https://codeclimate.com/github/tatacoa/petproject/maintainability)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/1a4ffcfcfc01fc55c1e8/test_coverage)](https://codeclimate.com/github/tatacoa/petproject/test_coverage)
+This code review tool analyze all relevant files in the current working directory in my repository. 20 files where evaluated, 7 Total issues, and a general technical debt rate B (5% to 10% ratio)
+
 
 # CI Travis
 
 # Clean Code
 
-[I'm an inline-style link](https://github.com/tatacoa/petproject/blob/ee7915f0faf42276e62e945d54f5a2e4ab89005a/bullet.py#L5)
+The clean code is based on the "Clean code cheat sheet" from this [link](https://www.planetgeek.ch/wp-content/uploads/2013/06/Clean-Code-V2.2.pdf). I use vim with the XXXXXXXXXXXXXXXXXXXXXXXXXX config some examples:
+
+[Example 1](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/game_stats.py#L1): General and Understandability
+
+[Example 2](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/rabbits_game.py#L13): High Cohesion
+
+[Example 3](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/bullet.py#L5): Class Design
+
+[Example 4](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/settings.py#L1): Naming
+
+[Example 5](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/game_functions.py#L9): Methods
+
+
 
 # DSL
 
