@@ -7,4 +7,4 @@ class GameStats():
         self.game_active = True
 
     def reset_stats(self):
-        self.ships_left = self.ai_settings.ship_limit
+        self.polices_left = self.ai_settings.police_limit

@@ -4,7 +4,7 @@ file doc
 import pygame
 
 from settings import Settings
-from ship import Ship
+from police import Police
 import game_functions as gf
 from pygame.sprite import Group
 from game_stats import GameStats
@@ -21,25 +21,25 @@ def run_game():
     pygame.display.set_caption("Rabbits in Tierpark")
 
     # create a player
-    ship = Ship(ai_settings, screen)
+    police = Police(ai_settings, screen)
     # create a group to store the bullets
     bullets = Group()
     rabbits = Group()
     # create a familiy of rabbits
-    gf.create_fleet(ai_settings, screen, ship, rabbits)
+    gf.create_fleet(ai_settings, screen, police, rabbits)
 
     # create stats data
     stats = GameStats(ai_settings)
 
     # start the inicial loop of the game
     while True:
-        gf.check_events(ai_settings, screen, ship, bullets)
+        gf.check_events(ai_settings, screen, police, bullets)
         if stats.game_active:
-            ship.update()
+            police.update()
             gf.update_bullets(rabbits, bullets)
-            gf.update_rabbits(ai_settings, stats, screen, ship,
+            gf.update_rabbits(ai_settings, stats, screen, police,
                               rabbits, bullets)
-        gf.update_screen(ai_settings, screen, ship, rabbits,
+        gf.update_screen(ai_settings, screen, police, rabbits,
                          bullets)
 
 

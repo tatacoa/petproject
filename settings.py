@@ -8,8 +8,8 @@ class Settings():
         self.bg_color = (30, 154, 83)
 
         # police configuration
-        self.ship_speed_factor = 1.5
-        self.ship_limit = 3
+        self.police_speed_factor = 1.5
+        self.police_limit = 3
 
         # bullets configuration
         self.bullet_speed_factor = 3

@@ -5,7 +5,7 @@ from pygame.sprite import Sprite
 class Bullet(Sprite):
     """a class that rules the player bullets"""
 
-    def __init__(self, ai_settings, screen, ship):
+    def __init__(self, ai_settings, screen, police):
         """create an object to shoot the bullest from the object"""
         super(Bullet, self).__init__()
         self.screen = screen
@@ -13,8 +13,8 @@ class Bullet(Sprite):
         # create a rect in (0, 0), and define the rigth position
         self.rect = pygame.Rect(0, 0, ai_settings.bullet_width,
                                 ai_settings.bullet_height)
-        self.rect.centerx = ship.rect.centerx
-        self.rect.top = ship.rect.top
+        self.rect.centerx = police.rect.centerx
+        self.rect.top = police.rect.top
 
         # store the bullet position as float
         self.y = float(self.rect.y)
