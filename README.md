@@ -100,7 +100,7 @@ A  DSL example that does not contribute to my project: [DSL](https://github.com/
 
 # Functional Programing
 
-Functional programming is great but in the fact is very dificcult for me to implement it, becasue im new in Python and have been focusing in object orentiert languages so far. For my project I choosed a functional programming style where appropriate. For some parts of this specific software a more object-oriented approach was a good fit (rabbits, police, bullets, screen). The implementacion is found [here].
+Functional programming is great but in the fact is very dificcult for me to implement it, becasue im new in Python and have been focusing in object orentiert languages so far. For my project I choosed a functional programming style where appropriate. For some parts of this specific software a more object-oriented approach was a good fit (rabbits, police, bullets, screen). The implementacion is found [here]https://github.com/tatacoa/petproject/tree/functional-example.
 
 [only final data structures](https://github.com/tatacoa/petproject/blob/functional-example/rabbits_game.py#L18)
 
