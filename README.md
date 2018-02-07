@@ -80,7 +80,7 @@ This code review tool analyze all relevant files in the current working director
 
 # Clean Code
 
-The clean code is based on the "Clean code cheat sheet" from this [link](https://www.planetgeek.ch/wp-content/uploads/2013/06/Clean-Code-V2.2.pdf). I use vim with the XXXXXXXXXXXXXXXXXXXXXXXXXX config some examples:
+The clean code is based on the "Clean code cheat sheet" from this [link](https://www.planetgeek.ch/wp-content/uploads/2013/06/Clean-Code-V2.2.pdf). I use vim with [this](https://gist.github.com/tatacoa/d8d212964275bc4a505634dd74d1ce83) configuration.
 
 [Example 1](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/game_stats.py#L1): General and Understandability
 
@@ -95,6 +95,8 @@ The clean code is based on the "Clean code cheat sheet" from this [link](https:/
 
 
 # DSL
+
+A  DSL example that does not contribute to my project: [DSL] (https://github.com/tatacoa/petproject/blob/e86d409f61baca6231ec9d74d81ad1cd0d141ae7/dsl.py#L2)
 
 # Functional Programing
 
@@ -115,5 +117,5 @@ Functional programming is great but in the fact is very dificcult for me to impl
 
 [use clojures / anonymous functions](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L92)
 
-
+# Feedback
 
