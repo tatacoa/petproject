@@ -1,5 +1,5 @@
 
-PROGRAM = '>>>>>p+p++p+++p<<<<<+++p>p+p+++++>+p<<-p'
+PROGRAM = '>>>>>p+p>++p>+++p<<<<+++p>p+p+++++>+p<<-p'
 
 memory = [0 for i in range(10)]
 index = 0
