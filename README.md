@@ -98,14 +98,7 @@ The clean code is based on the "Clean code cheat sheet" from this [link](https:/
 
 # Functional Programing
 
-Functional Programming (prove that you have covered all functional definitions in your code as
-
-Functional programming is great but in the "real-world" there are in comparision few pure functional software projects *Weichspuehlen!*. For my project I choosed a functional programming style where appropriate. For some parts of this specific software a more object-oriented approach was a good fit (rabbits, police, bullets, screen)
-
-
-only final data structures
-
-nicht ganz richtig, aber vielleicht besser als nichts:
+Functional programming is great but in the fact is very dificcult for me to implement it, becasue im new in Python and have been focusing in object orentiert languages so far. For my project I choosed a functional programming style where appropriate. For some parts of this specific software a more object-oriented approach was a good fit (rabbits, police, bullets, screen). The implementacion is found [here].
 
 [only final data structures](https://github.com/tatacoa/petproject/blob/functional-example/rabbits_game.py#L18)
 
@@ -114,23 +107,11 @@ nicht ganz richtig, aber vielleicht besser als nichts:
 - get_number_rabbits_x
 - get_number_rows
 
-
-the use of higher order functions
-
 [Use of higher order functions](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L114)
 
-
-functions as parameters and return values
-
-function as parameter:
 [Function as parameter](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L104)
 
-
-function as return value:
-
 [function as return value:](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L92)
-
-use clojures / anonymous functions
 
 [use clojures / anonymous functions](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L92)
 
