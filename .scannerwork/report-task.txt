@@ -1,0 +1,7 @@
+organization=tatacoa-github
+projectKey=Sonar_PetProject
+serverUrl=https://sonarcloud.io
+serverVersion=7.1.0.36111
+dashboardUrl=https://sonarcloud.io/dashboard/index/Sonar_PetProject
+ceTaskId=AWFr5cTwygQAAyqqj13X
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWFr5cTwygQAAyqqj13X

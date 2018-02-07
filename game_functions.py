@@ -1,10 +1,9 @@
 import sys
-
-
+from time import sleep
 import pygame
 from bullet import Bullet
 from rabbit import Rabbit
-from time import sleep
+
 
 def check_keydown_events(event, ai_settings, screen, ship, bullets):
     """respond to key actions"""
@@ -60,8 +59,8 @@ def update_bullets(rabbits, bullets):
     """update the position of the bullets and clean old bullets"""
     # update bullet position
     bullets.update()
-    collisions = pygame.sprite.groupcollide(bullets, rabbits, 
-                                            True, True)
+    pygame.sprite.groupcollide(bullets, rabbits,
+                               True, True)
     # clean old bullets
     for bullet in bullets.copy():
         if bullet.rect.bottom <= 0:
@@ -71,14 +70,14 @@ def update_bullets(rabbits, bullets):
 def get_number_rabbits_x(ai_settings, rabbit_width):
     """determine the number of rabbits in a line"""
     available_space_x = ai_settings.screen_width - \
-    2 * rabbit_width
+        2 * rabbit_width
     number_rabbits_x = int(available_space_x /
                            (2 * rabbit_width))
     return number_rabbits_x
 
 
 def create_rabbit(ai_settings, screen, rabbits, rabbit_number,
-                 row_number):
+                  row_number):
     """create a rabbit"""
     rabbit = Rabbit(ai_settings, screen)
     rabbit_width = rabbit.rect.width
@@ -97,13 +96,13 @@ def create_fleet(ai_settings, screen, ship, rabbits):
     number_rabbits_x = get_number_rabbits_x(ai_settings,
                                             rabbit.rect.width)
     number_rows = get_number_rows(ai_settings, ship.rect.height,
-                                 rabbit.rect.height)
+                                  rabbit.rect.height)
 
     # create a line of rabbits
     for row_number in range(number_rows):
         for rabbit_number in range(number_rabbits_x):
             create_rabbit(ai_settings, screen, rabbits,
-                     rabbit_number, row_number)
+                          rabbit_number, row_number)
 
 
 def get_number_rows(ai_settings, ship_height, rabbit_height):

@@ -7,8 +7,8 @@ from settings import Settings
 from ship import Ship
 import game_functions as gf
 from pygame.sprite import Group
-from rabbit import Rabbit
 from game_stats import GameStats
+
 
 def run_game():
     '''
