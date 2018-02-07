@@ -23,7 +23,7 @@ The game is inspired by the book "Curso Intensivo de PYTHON" by author Eric Matt
 
 # The Game
 
-The player control a gun that appear in the low part of the screen, the player can move the policeman to the rigth and to the left using the <> keys and shot using the barscpace. When the game begins, a familiy of rabbits come to tierpark from the top of the screen (Zombie rabbits that want to kill all the Berliners", the player shot the zombie rabbits, when the player kills all the rabbits, a new generation will come to the park that is faster, if a rabbit comes to the end of the park the player will lose and the game is over.
+The player control a gun that appear in the low part of the screen, the player can move the policeman to the rigth and to the left using the <> keys and shot using the barscpace. When the game begins, a familiy of rabbits come to tierpark from the top of the screen (Zombie rabbits that want to kill all the Berliners), the player shot the zombie rabbits, when the player kills all the rabbits, a new generation will come to the park that is faster, if a rabbit comes to the end of the park the player will lose and the game is over.
 
 
 ![image](images/Screenshot1.png)
@@ -98,9 +98,41 @@ The clean code is based on the "Clean code cheat sheet" from this [link](https:/
 
 # Functional Programing
 
-# AOP
+Functional Programming (prove that you have covered all functional definitions in your code as
 
-# Logical Solver
+Functional programming is great but in the "real-world" there are in comparision few pure functional software projects *Weichspuehlen!*. For my project I choosed a functional programming style where appropriate. For some parts of this specific software a more object-oriented approach was a good fit (rabbits, police, bullets, screen)
 
-# Scala
+
+only final data structures
+
+nicht ganz richtig, aber vielleicht besser als nichts:
+
+[only final data structures](https://github.com/tatacoa/petproject/blob/functional-example/rabbits_game.py#L18)
+
+
+(mostly) side effect free functions
+- get_number_rabbits_x
+- get_number_rows
+
+
+the use of higher order functions
+
+[Use of higher order functions](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L114)
+
+
+functions as parameters and return values
+
+function as parameter:
+[Function as parameter](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L104)
+
+
+function as return value:
+
+[function as return value:](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L92)
+
+use clojures / anonymous functions
+
+[use clojures / anonymous functions](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L92)
+
+
 
