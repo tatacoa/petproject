@@ -67,9 +67,9 @@ def update_bullets(rabbits, bullets):
             bullets.remove(bullet)
 
 
-def get_number_rabbits_x(ai_settings, rabbit_width):
+def get_number_rabbits_x(screen_width, rabbit_width):
     """determine the number of rabbits in a line"""
-    available_space_x = ai_settings.screen_width - \
+    available_space_x = screen_width - \
         2 * rabbit_width
     number_rabbits_x = int(available_space_x /
                            (2 * rabbit_width))
@@ -88,15 +88,20 @@ def create_rabbit(ai_settings, screen, rabbits, rabbit_number,
     rabbits.add(rabbit)
 
 
+def get_available_space_calculator(factor):
+    return lambda available_space, rabbit_height: int(available_space / (factor * rabbit_height))
+
 def create_fleet(ai_settings, screen, ship, rabbits):
-    """create a family of rabbits"""
     """create rabbit and compute the number of rabbits
     per line """
     rabbit = Rabbit(ai_settings, screen)
-    number_rabbits_x = get_number_rabbits_x(ai_settings,
+    number_rabbits_x = get_number_rabbits_x(ai_settings.screen_width,
                                             rabbit.rect.width)
-    number_rows = get_number_rows(ai_settings, ship.rect.height,
-                                  rabbit.rect.height)
+    number_rows = get_number_rows(
+        ai_settings.screen_height,
+        ship.rect.height,
+        rabbit.rect.height,
+        rows_from_available_space=get_available_space_calculator(2))
 
     # create a line of rabbits
     for row_number in range(number_rows):
@@ -105,11 +110,12 @@ def create_fleet(ai_settings, screen, ship, rabbits):
                           rabbit_number, row_number)
 
 
-def get_number_rows(ai_settings, ship_height, rabbit_height):
+def get_number_rows(screen_height, ship_height, rabbit_height,
+                    rows_from_available_space):
     """compute the number of lines of rabbits"""
-    available_space_y = (ai_settings.screen_height -
+    available_space_y = (screen_height -
                          (3 * rabbit_height) - ship_height)
-    number_rows = int(available_space_y / (2 * rabbit_height))
+    number_rows = rows_from_available_space(available_space_y, rabbit_height)
     return number_rows
 
 
