@@ -70,7 +70,9 @@ Overal Maintainability rating was A! (Remediation cost / Development cost : less
 This code review tool analyze all relevant files in the current working directory in my repository. 20 files where evaluated, 7 Total issues, and a general technical debt rate B (5% to 10% ratio)
 
 
-# CI Travis
+# Travis CI
+
+[![Build Status](https://travis-ci.org/tatacoa/petproject.svg?branch=master)](https://travis-ci.org/tatacoa/petproject)
 
 # Clean Code
 
