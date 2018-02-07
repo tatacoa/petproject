@@ -23,23 +23,21 @@ The game is inspired by the book "Curso Intensivo de PYTHON" by author Eric Matt
 
 # The Game
 
-The player control the gun to appear in the low part of the screen, the player can move the gun to the rigth and to the left using the <> keys and to shot using the barscpace. When the game begins, a familiy of rabbits come to tierpark from the top of the screen, the player shot the rabits, when the player kills all the rabbits, a new generation will come to the park that is faster, if a rabbit comes to the end of the park the player will lose and the game is over.
+The player control a gun that appear in the low part of the screen, the player can move the policeman to the rigth and to the left using the <> keys and shot using the barscpace. When the game begins, a familiy of rabbits come to tierpark from the top of the screen (Zombie rabbits that want to kill all the Berliners", the player shot the zombie rabbits, when the player kills all the rabbits, a new generation will come to the park that is faster, if a rabbit comes to the end of the park the player will lose and the game is over.
 
 
 ![image](images/Screenshot1.png)
 ![image](images/Screenshot2.png)
-![image](images/Screenshot3.png)
 
 
-# UML
 
-![image](images/uml_1.png)
+# UMLs
 
 ![image](images/uml_2.png)
 
-In this diagram you can see some action nodes. Yo have a start node and an end node. 
+In this diagram you can see some action nodes. You have a start node and an end node. 
 On the right there is a branching. Object nodes are not drawn. In this way, you could insert objects in various places, which are
-then available at that point. For example, a rabbit object that is killed by the police after a successful bullet shoot. Or
+then available at that point. For example, a rabbit object that is killed by the police after a successful bullet shot. Or
 an object representing the entire game including rabbits and the police.
 
 ![image](images/uml_3.png)
@@ -47,7 +45,13 @@ an object representing the entire game including rabbits and the police.
 State Diagram:
 In this diagram each box represent one stage of the game  and describe it. Once the game start the player can have 3 states: 1: the police is killing rabbits, 2: The Rabbits kill the police and 3: The police has no more bullets and need to wait for a small period of time till some bullets are free again. The player win, wenn all the rabbits are killed and  lose when the rabbits kill him. 
 
+![image](images/uml_1.png)
+
+The Structure diagram emphasize the objects present in  the game. 
+
 ![image](images/uml_4.png)
+
+The class Diagram: shows the relationship between the Classes in the game and how they are involved. The different Classes are connected in the run game file.
 
 # Metrics
 
