@@ -42,7 +42,7 @@ an object representing the entire game including rabbits and the police.
 
 ![image](images/uml_3.png)
 
-State Diagram:
+Sequence Diagram:
 In this diagram each box represent one stage of the game  and describe it. Once the game start the player can have 3 states: 1: the police is killing rabbits, 2: The Rabbits kill the police and 3: The police has no more bullets and need to wait for a small period of time till some bullets are free again. The player win, wenn all the rabbits are killed and  lose when the rabbits kill him. 
 
 ![image](images/uml_1.png)
@@ -113,9 +113,9 @@ Functional programming is great but in the fact is very dificcult for me to impl
 
 [Function as parameter](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L104)
 
-[function as return value:](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L92)
+[function as return value](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L92)
 
 [use clojures / anonymous functions](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L92)
 
-# Feedback
+
 
