@@ -82,15 +82,15 @@ This code review tool analyze all relevant files in the current working director
 
 The clean code is based on the "Clean code cheat sheet" from this [link](https://www.planetgeek.ch/wp-content/uploads/2013/06/Clean-Code-V2.2.pdf). I use vim with [this](https://gist.github.com/tatacoa/d8d212964275bc4a505634dd74d1ce83) configuration.
 
-[Example 1](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/game_stats.py#L1): General and Understandability
+[Example 1](https://github.com/tatacoa/petproject/blob/master/game_stats.py#L1): General and Understandability
 
-[Example 2](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/rabbits_game.py#L13): High Cohesion
+[Example 2](https://github.com/tatacoa/petproject/blob/master/rabbits_game.py#L13): High Cohesion
 
-[Example 3](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/bullet.py#L5): Class Design
+[Example 3](https://github.com/tatacoa/petproject/blob/master/bullet.py#L5): Class Design
 
-[Example 4](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/settings.py#L1): Naming
+[Example 4](https://github.com/tatacoa/petproject/blob/master/settings.py#L1): Naming
 
-[Example 5](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/game_functions.py#L9): Methods
+[Example 5](https://github.com/tatacoa/petproject/blob/master/game_functions.py#L9): Methods
 
 
 
