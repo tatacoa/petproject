@@ -23,23 +23,21 @@ The game is inspired by the book "Curso Intensivo de PYTHON" by author Eric Matt
 
 # The Game
 
-The player control the gun to appear in the low part of the screen, the player can move the gun to the rigth and to the left using the <> keys and to shot using the barscpace. When the game begins, a familiy of rabbits come to tierpark from the top of the screen, the player shot the rabits, when the player kills all the rabbits, a new generation will come to the park that is faster, if a rabbit comes to the end of the park the player will lose and the game is over.
+The player control a gun that appear in the low part of the screen, the player can move the policeman to the rigth and to the left using the <> keys and shot using the barscpace. When the game begins, a familiy of rabbits come to tierpark from the top of the screen (Zombie rabbits that want to kill all the Berliners), the player shot the zombie rabbits, when the player kills all the rabbits, a new generation will come to the park that is faster, if a rabbit comes to the end of the park the player will lose and the game is over.
 
 
 ![image](images/Screenshot1.png)
 ![image](images/Screenshot2.png)
-![image](images/Screenshot3.png)
 
 
-# UML
 
-![image](images/uml_1.png)
+# UMLs
 
 ![image](images/uml_2.png)
 
-In this diagram you can see some action nodes. Yo have a start node and an end node. 
+In this diagram you can see some action nodes. You have a start node and an end node. 
 On the right there is a branching. Object nodes are not drawn. In this way, you could insert objects in various places, which are
-then available at that point. For example, a rabbit object that is killed by the police after a successful bullet shoot. Or
+then available at that point. For example, a rabbit object that is killed by the police after a successful bullet shot. Or
 an object representing the entire game including rabbits and the police.
 
 ![image](images/uml_3.png)
@@ -47,7 +45,13 @@ an object representing the entire game including rabbits and the police.
 State Diagram:
 In this diagram each box represent one stage of the game  and describe it. Once the game start the player can have 3 states: 1: the police is killing rabbits, 2: The Rabbits kill the police and 3: The police has no more bullets and need to wait for a small period of time till some bullets are free again. The player win, wenn all the rabbits are killed and  lose when the rabbits kill him. 
 
+![image](images/uml_1.png)
+
+The Structure diagram emphasize the objects present in  the game. 
+
 ![image](images/uml_4.png)
+
+The class Diagram: shows the relationship between the Classes in the game and how they are involved. The different Classes are connected in the run game file.
 
 # Metrics
 
@@ -70,11 +74,13 @@ Overal Maintainability rating was A! (Remediation cost / Development cost : less
 This code review tool analyze all relevant files in the current working directory in my repository. 20 files where evaluated, 7 Total issues, and a general technical debt rate B (5% to 10% ratio)
 
 
-# CI Travis
+# Travis CI
+
+[![Build Status](https://travis-ci.org/tatacoa/petproject.svg?branch=master)](https://travis-ci.org/tatacoa/petproject)
 
 # Clean Code
 
-The clean code is based on the "Clean code cheat sheet" from this [link](https://www.planetgeek.ch/wp-content/uploads/2013/06/Clean-Code-V2.2.pdf). I use vim with the XXXXXXXXXXXXXXXXXXXXXXXXXX config some examples:
+The clean code is based on the "Clean code cheat sheet" from this [link](https://www.planetgeek.ch/wp-content/uploads/2013/06/Clean-Code-V2.2.pdf). I use vim with [this](https://gist.github.com/tatacoa/d8d212964275bc4a505634dd74d1ce83) configuration.
 
 [Example 1](https://github.com/tatacoa/petproject/blob/aa471e27c6e147c36cd027eb370381386c5351f3/game_stats.py#L1): General and Understandability
 
@@ -90,11 +96,26 @@ The clean code is based on the "Clean code cheat sheet" from this [link](https:/
 
 # DSL
 
+A  DSL example that does not contribute to my project: [DSL](https://github.com/tatacoa/petproject/blob/e86d409f61baca6231ec9d74d81ad1cd0d141ae7/dsl.py#L2)
+
 # Functional Programing
 
-# AOP
+Functional programming is great but in the fact is very dificcult for me to implement it, becasue im new in Python and have been focusing in object orentiert languages so far. For my project I choosed a functional programming style where appropriate. For some parts of this specific software a more object-oriented approach was a good fit (rabbits, police, bullets, screen). The implementacion is found [here](https://github.com/tatacoa/petproject/tree/functional-example).
 
-# Logical Solver
+[only final data structures](https://github.com/tatacoa/petproject/blob/functional-example/rabbits_game.py#L18)
 
-# Scala
+
+(mostly) side effect free functions
+- get_number_rabbits_x
+- get_number_rows
+
+[Use of higher order functions](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L114)
+
+[Function as parameter](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L104)
+
+[function as return value:](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L92)
+
+[use clojures / anonymous functions](https://github.com/tatacoa/petproject/blob/65d67c44267cf248d683625749976ad2d146002c/game_functions.py#L92)
+
+# Feedback
 
